@@ -338,7 +338,7 @@ textarea{width:100%;background:var(--bg);color:var(--tx);border:1px solid var(--
 <div id="nameModal">
   <div class="box">
     <h3 data-i18n="nameT">✍️ اسم المقطع</h3>
-    <div class="prefix">SAM Studio - (اسمك هنا).webm</div>
+    <div class="prefix">SAM Studio - (اسمك هنا)</div>
     <input type="text" id="clipNameIn" data-i18n-ph="namePh" maxlength="60">
     <div class="acts">
       <button class="btn" id="nameOk" data-i18n="ok">حفظ</button>
@@ -368,12 +368,12 @@ textarea{width:100%;background:var(--bg);color:var(--tx);border:1px solid var(--
 
 <script>
 /* ====== بيانات المبرمج ====== */
-var CONFIG={whatsapp:'967775158678',email:'sam.734739366@gmail.com',version:'2.1.0'};
+var CONFIG={whatsapp:'967775158678',email:'sam.734739366@gmail.com',version:'2.2.0'};
 
 /* ================= الترجمة ================= */
 var I18N={
-ar:{appTag:'اصنع فيديوهاتك الاحترافية',general:'الإعدادات العامة',lang:'اللغة',theme:'المظهر',auto:'تلقائي',light:'فاتح',dark:'غامق',sections:'الأقسام',navEditor:'محرر الفيديو',navStudio:'استوديو الفيديو',navHome:'البرنامج الرئيسي',navEditPic:'تحرير صور',edT:'محرر الفيديو — قص ودمج ومؤثرات',addVids:'استورد مقاطع فيديو',clearAll:'مسح الكل',totalLen:'الطول الكلي',trimStart:'بداية القص',trimEnd:'نهاية القص',revT:'تشغيل بالمقلوب 🪄',speed:'السرعة',transP:'الانتقال بين المقاطع',trans:'الانتقال',trNone:'بلا',trFade:'تلاشي',trSlide:'انزلاق',trZoom:'تكبير',trWipe:'ستارة جانبية',trCircle:'دائرة مكشوفة',trDur:'مدة الانتقال',magic:'اللمسة السحرية',pCine:'سينمائي فخم',pEnergy:'طاقة عالية',pClean:'نظيف طبيعي',pDone:'✨ تم تطبيق:',cineP:'مؤثرات سينمائية',react:'تنفس مع الموسيقى',shake:'اهتزاز على الضربات',glow:'توهج ينبض',bar:'شريط سينمائي',open:'افتتاحية',openPh:'عنوان الافتتاحية (اختياري)',introDur:'مدة الافتتاحية',fadeOut:'تلاشٍ ختامي',stkT:'ستيكرات متحركة',stkSize:'الحجم',stkAnim:'الحركة',kPulse:'نبض',kFloat:'طفو',kShake:'اهتزاز',kSpin:'دوران',kPop:'ظهور نابض',stkT0:'يظهر عند',stkT1:'ينتهي عند',stkHint:'اختر ستيكراً ثم انقر على المعاينة لوضعه',stkHint2:'الآن انقر على المعاينة لوضع الستيكر',stkHint3:'انقر على المعاينة لنقل الستيكر المحدد',stkAdded:'✓ أُضيف — انقر لنقله',stkMoved:'تم النقل',stkEmpty:'لا ستيكرات بعد',stkMove:'نقل',stkClearSel:'إلغاء',syncP:'نصوص متزامنة',size:'الحجم',color:'اللون',effect:'مؤثر النص',fxNone:'بدون',fxShadow:'ظل',fxGlow:'توهج',fxOutline:'حدود',pos:'الموضع',posTop:'أعلى',posMid:'وسط',posBottom:'أسفل',colors:'ألوان',syAnim:'حركة الظهور',saNone:'بدون',saFadeUp:'تلاشي رفع',saSlideUp:'انزلاق',saScale:'تكبير',syLiveFx:'مؤثر مستمر',slNone:'بدون',slBox:'البوكس الشعاعي',slWave:'تلوين تدريجي',slBreath:'نبض خفيف',slKara:'مؤشر كاراوكي',boxOp:'شفافية البوكس',liveM:'وضع الترجمة الحية',txtPh:'اكتب السطر هنا...',lyrPh:'الصق النصوص — سطر لكل جملة (Enter بينها)',tapStart:'🎯 مزامنة بنقرة واحدة',tapHint:'الصق النصوص ثم "مزامنة بنقرة" — على الجوال زر ⏭ بجانب ▶',tapT:'مزامنة بنقرة',tapGo:'▶ ابدأ المزامنة',tapKeyM:'بعد البدء: اضغط ⏭ عند بداية كل سطر',tapDone:'✅ تمت المزامنة!',tapAutoEnd:'انتهى الفيديو — تمت مزامنة ما ضغطته',tapCancel:'أُلغيت المزامنة',liveAdd:'سجّل',addNow:'➕ نص عند اللحظة',emptyList:'لا نصوص بعد',musicP:'الموسيقى',addMusic:'اختر ملف صوتي',mStart:'بداية المقطع',mVol:'مستوى الصوت',origAudio:'صوت المقاطع الأصلية (المعكوسة بلا صوت)',wmT:'العلامة المائية',wmEnable:'علامة مائية شفافة (افتراضياً: SAM Studio)',wmType:'النوع',wmText:'نص',wmImg:'شعار / صورة',wmChoose:'اختر شعار/صورة',wmPh:'اكتب نص العلامة المائية',wmOpacity:'الشفافية',wmPos:'الموضع',pTr:'أعلى يمين',pTl:'أعلى يسار',pBr:'أسفل يمين',pBl:'أسفل يسار',pC:'الوسط',fxP:'الفلاتر والمظهر',filt:'الفلتر',fNone:'ألوان أصلية',fMono:'أبيض وأسود',fSepia:'سيبيا قديم',fVivid:'زاهي',fCool:'بارد',fWarm:'دافئ',fFade:'باهت',fNoir:'نوار كلاسيكي',fCine:'سينمائي',fDream:'حالم',fCyber:'سايبر',fSunset:'غروب',fSilver:'فضي',vig:'التظليل الجانبي',grain:'حبيبات سينمائية',prevP:'المعاينة والتصدير',orient:'اتجاه الفيديو',oPort:'طولي (جوال)',oLand:'عرضي (شاشة)',quality:'جودة الحفظ',qLow:'صغير',qMed:'متوسط',qHigh:'عالي',recPrev:'🎬 تصوير مع المعاينة',quick:'⚡ حفظ سريع',pauseTip:'أثناء التصوير: ⏸ يوقف التسجيل والمعاينة معاً — اكتب ترجمتك ثم تابع',needClips:'استورد مقطع فيديو أولاً',clipAdded:'تمت الإضافة ✅',cleared:'تم المسح',warnSilent:'تنبيه: لا يوجد مصدر صوت — أضف موسيقى',recBadge:'جاري التصوير',recNotSup:'متصفحك لا يدعم التصوير — استخدم كروم أو إيدج',recDone:'✅ الفيديو جاهز',save:'حفظ',share:'مشاركة',shareNo:'المشاركة غير مدعومة هنا',quickDone:'✅ حُفظ في التنزيلات',canvasEmpty:'استورد مقاطع لبدء المعاينة',videoErr:'تعذر قراءة الملف — جرّب MP4',extT:'🪄 استخراج الإطارات',extOf:'استخراج الإطارات',nameT:'✍️ اسم المقطع',namePh:'اكتب اسم المقطع (إجباري)',nameReq:'اسم المقطع مطلوب!',ok:'حفظ',cancel:'إلغاء',extBusy:'انتظر انتهاء تجهيز المقلوب',pauseT:'⏸ إيقاف مؤقت — اكتب ترجمتك',atTime:'سيُسجّل عند اللحظة',addHere:'➕ أضف عند هذه اللحظة',resume:'▶ متابعة التسجيل',needTxt:'اكتب أو الصق النصوص أولاً',synced:'سُجّل عند',prevSample:'معاينة النص المتزامن'},
-en:{appTag:'Create professional videos',general:'General Settings',lang:'Language',theme:'Theme',auto:'Auto',light:'Light',dark:'Dark',sections:'Sections',navEditor:'Video Editor',navStudio:'Video Studio',navHome:'Main App',navEditPic:'Edit Photos',edT:'Video Editor — trim, merge & effects',addVids:'Import video clips',clearAll:'Clear all',totalLen:'Total length',trimStart:'Trim start',trimEnd:'Trim end',revT:'Play in reverse 🪄',speed:'Speed',transP:'Transitions between clips',trans:'Transition',trNone:'None',trFade:'Fade',trSlide:'Slide',trZoom:'Zoom',trWipe:'Wipe',trCircle:'Circle reveal',trDur:'Transition time',magic:'Magic Touch',pCine:'Cinematic Luxe',pEnergy:'High Energy',pClean:'Clean Natural',pDone:'✨ Applied:',cineP:'Cinematic Effects',react:'Breathe with music',shake:'Shake on beats',glow:'Pulsing glow',bar:'Cinematic bars',open:'Cinematic intro',openPh:'Intro title (optional)',introDur:'Intro duration',fadeOut:'Ending fade-out',stkT:'Animated Stickers',stkSize:'Size',stkAnim:'Animation',kPulse:'Pulse',kFloat:'Float',kShake:'Shake',kSpin:'Spin',kPop:'Pop in',stkT0:'Show at',stkT1:'End at',stkHint:'Pick a sticker then tap the preview to place it',stkHint2:'Now tap the preview to place the sticker',stkHint3:'Tap the preview to move the selected sticker',stkAdded:'✓ Added — tap to move',stkMoved:'Moved',stkEmpty:'No stickers yet',stkMove:'Move',stkClearSel:'Cancel',syncP:'Synced Texts',size:'Size',color:'Color',effect:'Text effect',fxNone:'None',fxShadow:'Shadow',fxGlow:'Glow',fxOutline:'Outline',pos:'Position',posTop:'Top',posMid:'Middle',posBottom:'Bottom',colors:'Colors',syAnim:'Entry animation',saNone:'None',saFadeUp:'Fade & rise',saSlideUp:'Slide up',saScale:'Soft zoom',syLiveFx:'Live effect',slNone:'None',slBox:'Gradient box',slWave:'Color wave',slBreath:'Soft pulse',slKara:'Karaoke bar',boxOp:'Box opacity',liveM:'Live subtitle mode',txtPh:'Type the line here...',lyrPh:'Paste lines — one per sentence (Enter between)',tapStart:'🎯 One-tap sync',tapHint:'Paste lines then "One-tap sync" — on mobile use ⏭ next to ▶',tapT:'One-tap sync',tapGo:'▶ Start sync',tapKeyM:'After start: tap ⏭ at each line start',tapDone:'✅ Synced!',tapAutoEnd:'Video ended — synced what you tapped',tapCancel:'Sync cancelled',liveAdd:'Record',addNow:'➕ Text at moment',emptyList:'No texts yet',musicP:'Music',addMusic:'Choose audio file',mStart:'Start offset',mVol:'Volume',origAudio:'Original clips audio (reversed are silent)',wmT:'Watermark',wmEnable:'Transparent watermark (default: SAM Studio)',wmType:'Type',wmText:'Text',wmImg:'Logo / Image',wmChoose:'Choose logo/image',wmPh:'Watermark text',wmOpacity:'Opacity',wmPos:'Position',pTr:'Top right',pTl:'Top left',pBr:'Bottom right',pBl:'Bottom left',pC:'Center',fxP:'Filters & Look',filt:'Filter',fNone:'Original',fMono:'Black & White',fSepia:'Vintage Sepia',fVivid:'Vivid',fCool:'Cool',fWarm:'Warm',fFade:'Faded',fNoir:'Classic Noir',fCine:'Cinematic',fDream:'Dreamy',fCyber:'Cyberpunk',fSunset:'Sunset',fSilver:'Silver',vig:'Vignette',grain:'Film grain',prevP:'Preview & Export',orient:'Video orientation',oPort:'Vertical (phone)',oLand:'Horizontal (screen)',quality:'Export quality',qLow:'Small',qMed:'Medium',qHigh:'High',recPrev:'🎬 Record with Preview',quick:'⚡ Quick Save',pauseTip:'While recording: ⏸ pauses recording & preview together — write your subtitle then resume',needClips:'Import a video clip first',clipAdded:'Clip added ✅',cleared:'Cleared',warnSilent:'Note: no audio source — add music',recBadge:'Recording',recNotSup:'Your browser cannot record — use Chrome or Edge',recDone:'✅ Video ready',save:'Save',share:'Share',shareNo:'Sharing not supported here',quickDone:'✅ Saved to Downloads',canvasEmpty:'Import clips to preview',videoErr:'Cannot read this file — try MP4',extT:'🪄 Extracting frames',extOf:'Extracting frames',nameT:'✍️ Clip Name',namePh:'Write clip name (required)',nameReq:'Clip name is required!',ok:'Save',cancel:'Cancel',extBusy:'Wait for reverse preparation',pauseT:'⏸ Paused — write your subtitle',atTime:'Will be synced at',addHere:'➕ Add at this moment',resume:'▶ Resume recording',needTxt:'Write or paste the lines first',synced:'Recorded at',prevSample:'Synced text preview'}
+ar:{appTag:'اصنع فيديوهاتك الاحترافية',general:'الإعدادات العامة',lang:'اللغة',theme:'المظهر',auto:'تلقائي',light:'فاتح',dark:'غامق',sections:'الأقسام',navEditor:'محرر الفيديو',navStudio:'استوديو الفيديو',navHome:'البرنامج الرئيسي',navEditPic:'تحرير صور',edT:'محرر الفيديو — قص ودمج ومؤثرات',addVids:'استورد مقاطع فيديو',clearAll:'مسح الكل',totalLen:'الطول الكلي',trimStart:'بداية القص',trimEnd:'نهاية القص',revT:'تشغيل بالمقلوب 🪄',speed:'السرعة',transP:'الانتقال بين المقاطع',trans:'الانتقال',trNone:'بلا',trFade:'تلاشي',trSlide:'انزلاق',trZoom:'تكبير',trWipe:'ستارة جانبية',trCircle:'دائرة مكشوفة',trDur:'مدة الانتقال',magic:'اللمسة السحرية',pCine:'سينمائي فخم',pEnergy:'طاقة عالية',pClean:'نظيف طبيعي',pDone:'✨ تم تطبيق:',cineP:'مؤثرات سينمائية',react:'تنفس مع الموسيقى',shake:'اهتزاز على الضربات',glow:'توهج ينبض',bar:'شريط سينمائي',open:'افتتاحية',openPh:'عنوان الافتتاحية (اختياري)',introDur:'مدة الافتتاحية',fadeOut:'تلاشٍ ختامي',stkT:'ستيكرات متحركة',stkSize:'الحجم',stkAnim:'الحركة',kPulse:'نبض',kFloat:'طفو',kShake:'اهتزاز',kSpin:'دوران',kPop:'ظهور نابض',stkT0:'يظهر عند',stkT1:'ينتهي عند',stkHint:'اختر ستيكراً ثم انقر على المعاينة لوضعه',stkHint2:'الآن انقر على المعاينة لوضع الستيكر',stkHint3:'انقر على المعاينة لنقل الستيكر المحدد',stkAdded:'✓ أُضيف — انقر لنقله',stkMoved:'تم النقل',stkEmpty:'لا ستيكرات بعد',stkMove:'نقل',stkClearSel:'إلغاء',syncP:'نصوص متزامنة',size:'الحجم',color:'اللون',effect:'مؤثر النص',fxNone:'بدون',fxShadow:'ظل',fxGlow:'توهج',fxOutline:'حدود',pos:'الموضع',posTop:'أعلى',posMid:'وسط',posBottom:'أسفل',colors:'ألوان',syAnim:'حركة الظهور',saNone:'بدون',saFadeUp:'تلاشي رفع',saSlideUp:'انزلاق',saScale:'تكبير',syLiveFx:'مؤثر مستمر',slNone:'بدون',slBox:'البوكس الشعاعي',slWave:'تلوين تدريجي',slBreath:'نبض خفيف',slKara:'مؤشر كاراوكي',boxOp:'شفافية البوكس',liveM:'وضع الترجمة الحية',txtPh:'اكتب السطر هنا...',lyrPh:'الصق النصوص — سطر لكل جملة (Enter بينها)',tapStart:'🎯 مزامنة بنقرة واحدة',tapHint:'الصق النصوص ثم "مزامنة بنقرة" — على الجوال زر ⏭ بجانب ▶',tapT:'مزامنة بنقرة',tapGo:'▶ ابدأ المزامنة',tapKeyM:'بعد البدء: اضغط ⏭ عند بداية كل سطر',tapDone:'✅ تمت المزامنة!',tapAutoEnd:'انتهى الفيديو — تمت مزامنة ما ضغطته',tapCancel:'أُلغيت المزامنة',liveAdd:'سجّل',addNow:'➕ نص عند اللحظة',emptyList:'لا نصوص بعد',musicP:'الموسيقى',addMusic:'اختر ملف صوتي',mStart:'بداية المقطع',mVol:'مستوى الصوت',origAudio:'صوت المقاطع الأصلية (المعكوسة بلا صوت)',wmT:'العلامة المائية',wmEnable:'علامة مائية شفافة (افتراضياً: SAM Studio)',wmType:'النوع',wmText:'نص',wmImg:'شعار / صورة',wmChoose:'اختر شعار/صورة',wmPh:'اكتب نص العلامة المائية',wmOpacity:'الشفافية',wmPos:'الموضع',pTr:'أعلى يمين',pTl:'أعلى يسار',pBr:'أسفل يمين',pBl:'أسفل يسار',pC:'الوسط',fxP:'الفلاتر والمظهر',filt:'الفلتر',fNone:'ألوان أصلية',fMono:'أبيض وأسود',fSepia:'سيبيا قديم',fVivid:'زاهي',fCool:'بارد',fWarm:'دافئ',fFade:'باهت',fNoir:'نوار كلاسيكي',fCine:'سينمائي',fDream:'حالم',fCyber:'سايبر',fSunset:'غروب',fSilver:'فضي',vig:'التظليل الجانبي',grain:'حبيبات سينمائية',prevP:'المعاينة والتصدير',orient:'اتجاه الفيديو',oPort:'طولي (جوال)',oLand:'عرضي (شاشة)',quality:'جودة الحفظ',qLow:'صغير',qMed:'متوسط',qHigh:'عالي',recPrev:'🎬 تصوير مع المعاينة',quick:'⚡ حفظ سريع',pauseTip:'أثناء التصوير: ⏸ يوقف التسجيل والمعاينة معاً — اكتب ترجمتك ثم تابع',needClips:'استورد مقطع فيديو أولاً',clipAdded:'تمت الإضافة ✅',cleared:'تم المسح',warnSilent:'تنبيه: لا يوجد مصدر صوت — أضف موسيقى',recBadge:'جاري التصوير',recNotSup:'متصفحك لا يدعم التصوير — حدّث كروم من المتجر',recDone:'✅ الفيديو جاهز',save:'حفظ',share:'مشاركة',shareNo:'المشاركة غير مدعومة هنا',quickDone:'✅ حُفظ في التنزيلات',canvasEmpty:'استورد مقاطع لبدء المعاينة',videoErr:'تعذر قراءة الملف — جرّب MP4',extT:'🪄 استخراج الإطارات',extOf:'استخراج الإطارات',nameT:'✍️ اسم المقطع',namePh:'اكتب اسم المقطع (إجباري)',nameReq:'اسم المقطع مطلوب!',ok:'حفظ',cancel:'إلغاء',extBusy:'انتظر انتهاء تجهيز المقلوب',pauseT:'⏸ إيقاف مؤقت — اكتب ترجمتك',atTime:'سيُسجّل عند اللحظة',addHere:'➕ أضف عند هذه اللحظة',resume:'▶ متابعة التسجيل',needTxt:'اكتب أو الصق النصوص أولاً',synced:'سُجّل عند',prevSample:'معاينة النص المتزامن'},
+en:{appTag:'Create professional videos',general:'General Settings',lang:'Language',theme:'Theme',auto:'Auto',light:'Light',dark:'Dark',sections:'Sections',navEditor:'Video Editor',navStudio:'Video Studio',navHome:'Main App',navEditPic:'Edit Photos',edT:'Video Editor — trim, merge & effects',addVids:'Import video clips',clearAll:'Clear all',totalLen:'Total length',trimStart:'Trim start',trimEnd:'Trim end',revT:'Play in reverse 🪄',speed:'Speed',transP:'Transitions between clips',trans:'Transition',trNone:'None',trFade:'Fade',trSlide:'Slide',trZoom:'Zoom',trWipe:'Wipe',trCircle:'Circle reveal',trDur:'Transition time',magic:'Magic Touch',pCine:'Cinematic Luxe',pEnergy:'High Energy',pClean:'Clean Natural',pDone:'✨ Applied:',cineP:'Cinematic Effects',react:'Breathe with music',shake:'Shake on beats',glow:'Pulsing glow',bar:'Cinematic bars',open:'Cinematic intro',openPh:'Intro title (optional)',introDur:'Intro duration',fadeOut:'Ending fade-out',stkT:'Animated Stickers',stkSize:'Size',stkAnim:'Animation',kPulse:'Pulse',kFloat:'Float',kShake:'Shake',kSpin:'Spin',kPop:'Pop in',stkT0:'Show at',stkT1:'End at',stkHint:'Pick a sticker then tap the preview to place it',stkHint2:'Now tap the preview to place the sticker',stkHint3:'Tap the preview to move the selected sticker',stkAdded:'✓ Added — tap to move',stkMoved:'Moved',stkEmpty:'No stickers yet',stkMove:'Move',stkClearSel:'Cancel',syncP:'Synced Texts',size:'Size',color:'Color',effect:'Text effect',fxNone:'None',fxShadow:'Shadow',fxGlow:'Glow',fxOutline:'Outline',pos:'Position',posTop:'Top',posMid:'Middle',posBottom:'Bottom',colors:'Colors',syAnim:'Entry animation',saNone:'None',saFadeUp:'Fade & rise',saSlideUp:'Slide up',saScale:'Soft zoom',syLiveFx:'Live effect',slNone:'None',slBox:'Gradient box',slWave:'Color wave',slBreath:'Soft pulse',slKara:'Karaoke bar',boxOp:'Box opacity',liveM:'Live subtitle mode',txtPh:'Type the line here...',lyrPh:'Paste lines — one per sentence (Enter between)',tapStart:'🎯 One-tap sync',tapHint:'Paste lines then "One-tap sync" — on mobile use ⏭ next to ▶',tapT:'One-tap sync',tapGo:'▶ Start sync',tapKeyM:'After start: tap ⏭ at each line start',tapDone:'✅ Synced!',tapAutoEnd:'Video ended — synced what you tapped',tapCancel:'Sync cancelled',liveAdd:'Record',addNow:'➕ Text at moment',emptyList:'No texts yet',musicP:'Music',addMusic:'Choose audio file',mStart:'Start offset',mVol:'Volume',origAudio:'Original clips audio (reversed are silent)',wmT:'Watermark',wmEnable:'Transparent watermark (default: SAM Studio)',wmType:'Type',wmText:'Text',wmImg:'Logo / Image',wmChoose:'Choose logo/image',wmPh:'Watermark text',wmOpacity:'Opacity',wmPos:'Position',pTr:'Top right',pTl:'Top left',pBr:'Bottom right',pBl:'Bottom left',pC:'Center',fxP:'Filters & Look',filt:'Filter',fNone:'Original',fMono:'Black & White',fSepia:'Vintage Sepia',fVivid:'Vivid',fCool:'Cool',fWarm:'Warm',fFade:'Faded',fNoir:'Classic Noir',fCine:'Cinematic',fDream:'Dreamy',fCyber:'Cyberpunk',fSunset:'Sunset',fSilver:'Silver',vig:'Vignette',grain:'Film grain',prevP:'Preview & Export',orient:'Video orientation',oPort:'Vertical (phone)',oLand:'Horizontal (screen)',quality:'Export quality',qLow:'Small',qMed:'Medium',qHigh:'High',recPrev:'🎬 Record with Preview',quick:'⚡ Quick Save',pauseTip:'While recording: ⏸ pauses recording & preview together — write your subtitle then resume',needClips:'Import a video clip first',clipAdded:'Clip added ✅',cleared:'Cleared',warnSilent:'Note: no audio source — add music',recBadge:'Recording',recNotSup:'Your browser cannot record — update Chrome from the store',recDone:'✅ Video ready',save:'Save',share:'Share',shareNo:'Sharing not supported here',quickDone:'✅ Saved to Downloads',canvasEmpty:'Import clips to preview',videoErr:'Cannot read this file — try MP4',extT:'🪄 Extracting frames',extOf:'Extracting frames',nameT:'✍️ Clip Name',namePh:'Write clip name (required)',nameReq:'Clip name is required!',ok:'Save',cancel:'Cancel',extBusy:'Wait for reverse preparation',pauseT:'⏸ Paused — write your subtitle',atTime:'Will be synced at',addHere:'➕ Add at this moment',resume:'▶ Resume recording',needTxt:'Write or paste the lines first',synced:'Recorded at',prevSample:'Synced text preview'}
 };
 var lang=localStorage.getItem('sam_lang')||(((navigator.language||'en').toLowerCase().indexOf('ar')===0)?'ar':'en');
 var savedTheme=localStorage.getItem('sam_theme')||'auto';
@@ -428,6 +428,7 @@ var KANIM_KEYS=['pulse','float','shake','spin','pop'];
 var PRESET_COLORS=['#ffffff','#000000','#FFD700','#FF4757','#2A6FE8','#2ED573','#FF6B9D','#00D2D3'];
 var STK_EMOJIS=['❤️','😍','🔥','💥','✨','⭐','🎉','🎊','💯','👏','🤣','😂','😎','🥰','😭','😡','💪','👍','🎵','🎶','🎬','💎','🌹','🌙','☀️','🌈','💔','🎁','🏆','⚡'];
 var APP_PREFIX='SAM Studio';
+var recMime='video/webm',recIsMp4=false;
 
 function rebuild(sel,keys,pfx,cur){
   sel.innerHTML='';
@@ -587,7 +588,6 @@ function activeSyncText(tm){
   }
   return best;
 }
-/* ===== مزامنة بنقرة — نمط الجوال ===== */
 var TAP={active:false,idx:0,lines:[],armed:false};
 function startTapSync(){
   if(recording)return;
@@ -1307,15 +1307,21 @@ async function startRec(mode){
   prepareAudio();
   askName(mode||'prev');
 }
+function pickMime(){
+  var cands=['video/mp4;codecs=avc1.42E01E,mp4a.40.2','video/mp4;codecs=avc1,mp4a.40.2','video/mp4','video/webm;codecs=vp9,opus','video/webm;codecs=vp8,opus','video/webm'];
+  for(var i=0;i<cands.length;i++){if(MediaRecorder.isTypeSupported(cands[i]))return cands[i];}
+  return '';
+}
 function beginRecording(){
   var go=function(){
     chunks=[];
     try{
       var tracks=cv.captureStream(30).getVideoTracks();
       if(destNode&&destNode.stream.getAudioTracks().length)tracks.push(destNode.stream.getAudioTracks()[0]);
-      var mime=MediaRecorder.isTypeSupported('video/webm;codecs=vp9,opus')?'video/webm;codecs=vp9,opus':(MediaRecorder.isTypeSupported('video/webm;codecs=vp8,opus')?'video/webm;codecs=vp8,opus':'video/webm');
+      recMime=pickMime();
+      recIsMp4=recMime.indexOf('mp4')>-1;
       var br={low:900000,med:1800000,high:3200000}[QUAL]||1800000;
-      rec=new MediaRecorder(new MediaStream(tracks),{mimeType:mime,videoBitsPerSecond:br,audioBitsPerSecond:128000});
+      rec=new MediaRecorder(new MediaStream(tracks),{mimeType:recMime||undefined,videoBitsPerSecond:br,audioBitsPerSecond:128000});
       rec.ondataavailable=function(ev){if(ev.data.size)chunks.push(ev.data);};
       rec.onstop=saveRec;
       vt=0;activeIdx=-1;paused=false;recAcc=0;segT0=0;
@@ -1345,12 +1351,12 @@ async function saveRec(){
   playing=false;$('playB').textContent='▶';pauseAllClips();
   closeOpenSync();
   keepAwake(false);
-  var ms=Math.max(500,Math.round(recAcc*1000));
-  var raw=new Blob(chunks,{type:'video/webm'});
-  patchWebmDuration(raw,ms,function(fixed){
+  var ext=recIsMp4?'.mp4':'.webm';
+  var fname=APP_PREFIX+' - '+CLIPNAME+ext;
+  var raw=new Blob(chunks,{type:recMime||'video/webm'});
+  function deliver(blob){
     try{
-      var b=fixed,url=URL.createObjectURL(b);
-      var fname=APP_PREFIX+' - '+CLIPNAME+'.webm';
+      var url=URL.createObjectURL(blob);
       var a=document.createElement('a');a.href=url;a.download=fname;document.body.appendChild(a);a.click();a.remove();
       if(pendingRecMode==='quick'){toast(t('quickDone'));}
       else{
@@ -1358,7 +1364,7 @@ async function saveRec(){
         var S=$('shareBtn');
         S.onclick=function(){
           try{
-            var f=new File([b],fname,{type:'video/webm'});
+            var f=new File([blob],fname,{type:blob.type});
             if(navigator.canShare&&navigator.canShare({files:[f]}))navigator.share({files:[f]}).catch(function(){});
             else toast(t('shareNo'));
           }catch(e){toast(t('shareNo'));}
@@ -1369,7 +1375,12 @@ async function saveRec(){
         toast(t('recDone'));
       }
     }catch(e){}
-  });
+  }
+  if(recIsMp4){deliver(raw);}
+  else{
+    var ms=Math.max(500,Math.round(recAcc*1000));
+    patchWebmDuration(raw,ms,deliver);
+  }
 }
 
 /* ================= ربط ================= */
