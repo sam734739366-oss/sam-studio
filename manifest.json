@@ -1,0 +1,14 @@
+{
+  "name": "SAM Studio",
+  "short_name": "SAM",
+  "description": "Create professional videos from your photos and music",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0B1220",
+  "theme_color": "#2A6FE8",
+  "lang": "ar",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
